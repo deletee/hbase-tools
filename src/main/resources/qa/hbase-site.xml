@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+       <property>
+              <name>hbase.zookeeper.quorum</name>
+              <value>urs-hadoop0.bjzw.163.org,urs-hadoop1.bjzw.163.org,urs-hadoop2.bjzw.163.org</value>
+       </property>
+       <property>
+              <name>zookeeper.znode.parent</name>
+              <value>/hbase-urstest</value>
+       </property>
+       <!-- performance tuning -->
+       <property>
+              <name>hbase.rpc.timeout</name>
+              <value>300000</value>
+       </property>
+       <property>
+              <name>hbase.client.write.buffer</name>
+              <value>2097153</value>
+       </property>
+       <property>
+              <name>hbase.client.pause</name>
+              <value>1000</value>
+       </property>
+       <property>
+              <name>hbase.client.scanner.caching</name>
+              <value>10000</value>
+       </property>
+       <property>
+              <name>hbase.client.retries.number</name>
+              <value>30</value>
+       </property>
+</configuration>
